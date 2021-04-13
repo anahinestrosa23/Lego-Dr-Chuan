@@ -1,79 +1,774 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html lang="en">
-<link rel="stylesheet" href="css/master.css">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            svg:not(:root).svg-inline--fa {
+                overflow: visible;
+            }
+    
+            .svg-inline--fa {
+                display: inline-block;
+                font-size: inherit;
+                height: 1em;
+                overflow: visible;
+                vertical-align: -0.125em;
+            }
+            .svg-inline--fa.fa-lg {
+                vertical-align: -0.225em;
+            }
+            .svg-inline--fa.fa-w-1 {
+                width: 0.0625em;
+            }
+            .svg-inline--fa.fa-w-2 {
+                width: 0.125em;
+            }
+            .svg-inline--fa.fa-w-3 {
+                width: 0.1875em;
+            }
+            .svg-inline--fa.fa-w-4 {
+                width: 0.25em;
+            }
+            .svg-inline--fa.fa-w-5 {
+                width: 0.3125em;
+            }
+            .svg-inline--fa.fa-w-6 {
+                width: 0.375em;
+            }
+            .svg-inline--fa.fa-w-7 {
+                width: 0.4375em;
+            }
+            .svg-inline--fa.fa-w-8 {
+                width: 0.5em;
+            }
+            .svg-inline--fa.fa-w-9 {
+                width: 0.5625em;
+            }
+            .svg-inline--fa.fa-w-10 {
+                width: 0.625em;
+            }
+            .svg-inline--fa.fa-w-11 {
+                width: 0.6875em;
+            }
+            .svg-inline--fa.fa-w-12 {
+                width: 0.75em;
+            }
+            .svg-inline--fa.fa-w-13 {
+                width: 0.8125em;
+            }
+            .svg-inline--fa.fa-w-14 {
+                width: 0.875em;
+            }
+            .svg-inline--fa.fa-w-15 {
+                width: 0.9375em;
+            }
+            .svg-inline--fa.fa-w-16 {
+                width: 1em;
+            }
+            .svg-inline--fa.fa-w-17 {
+                width: 1.0625em;
+            }
+            .svg-inline--fa.fa-w-18 {
+                width: 1.125em;
+            }
+            .svg-inline--fa.fa-w-19 {
+                width: 1.1875em;
+            }
+            .svg-inline--fa.fa-w-20 {
+                width: 1.25em;
+            }
+            .svg-inline--fa.fa-pull-left {
+                margin-right: 0.3em;
+                width: auto;
+            }
+            .svg-inline--fa.fa-pull-right {
+                margin-left: 0.3em;
+                width: auto;
+            }
+            .svg-inline--fa.fa-border {
+                height: 1.5em;
+            }
+            .svg-inline--fa.fa-li {
+                width: 2em;
+            }
+            .svg-inline--fa.fa-fw {
+                width: 1.25em;
+            }
+    
+            .fa-layers svg.svg-inline--fa {
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+    
+            .fa-layers {
+                display: inline-block;
+                height: 1em;
+                position: relative;
+                text-align: center;
+                vertical-align: -0.125em;
+                width: 1em;
+            }
+            .fa-layers svg.svg-inline--fa {
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+            }
+    
+            .fa-layers-counter,
+            .fa-layers-text {
+                display: inline-block;
+                position: absolute;
+                text-align: center;
+            }
+    
+            .fa-layers-text {
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+            }
+    
+            .fa-layers-counter {
+                background-color: #ff253a;
+                border-radius: 1em;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                color: #fff;
+                height: 1.5em;
+                line-height: 1;
+                max-width: 5em;
+                min-width: 1.5em;
+                overflow: hidden;
+                padding: 0.25em;
+                right: 0;
+                text-overflow: ellipsis;
+                top: 0;
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
+                -webkit-transform-origin: top right;
+                transform-origin: top right;
+            }
+    
+            .fa-layers-bottom-right {
+                bottom: 0;
+                right: 0;
+                top: auto;
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
+                -webkit-transform-origin: bottom right;
+                transform-origin: bottom right;
+            }
+    
+            .fa-layers-bottom-left {
+                bottom: 0;
+                left: 0;
+                right: auto;
+                top: auto;
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
+                -webkit-transform-origin: bottom left;
+                transform-origin: bottom left;
+            }
+    
+            .fa-layers-top-right {
+                right: 0;
+                top: 0;
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
+                -webkit-transform-origin: top right;
+                transform-origin: top right;
+            }
+    
+            .fa-layers-top-left {
+                left: 0;
+                right: auto;
+                top: 0;
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
+                -webkit-transform-origin: top left;
+                transform-origin: top left;
+            }
+    
+            .fa-lg {
+                font-size: 1.3333333333em;
+                line-height: 0.75em;
+                vertical-align: -0.0667em;
+            }
+    
+            .fa-xs {
+                font-size: 0.75em;
+            }
+    
+            .fa-sm {
+                font-size: 0.875em;
+            }
+    
+            .fa-1x {
+                font-size: 1em;
+            }
+    
+            .fa-2x {
+                font-size: 2em;
+            }
+    
+            .fa-3x {
+                font-size: 3em;
+            }
+    
+            .fa-4x {
+                font-size: 4em;
+            }
+    
+            .fa-5x {
+                font-size: 5em;
+            }
+    
+            .fa-6x {
+                font-size: 6em;
+            }
+    
+            .fa-7x {
+                font-size: 7em;
+            }
+    
+            .fa-8x {
+                font-size: 8em;
+            }
+    
+            .fa-9x {
+                font-size: 9em;
+            }
+    
+            .fa-10x {
+                font-size: 10em;
+            }
+    
+            .fa-fw {
+                text-align: center;
+                width: 1.25em;
+            }
+    
+            .fa-ul {
+                list-style-type: none;
+                margin-left: 2.5em;
+                padding-left: 0;
+            }
+            .fa-ul > li {
+                position: relative;
+            }
+    
+            .fa-li {
+                left: -2em;
+                position: absolute;
+                text-align: center;
+                width: 2em;
+                line-height: inherit;
+            }
+    
+            .fa-border {
+                border: solid 0.08em #eee;
+                border-radius: 0.1em;
+                padding: 0.2em 0.25em 0.15em;
+            }
+    
+            .fa-pull-left {
+                float: left;
+            }
+    
+            .fa-pull-right {
+                float: right;
+            }
+    
+            .fa.fa-pull-left,
+            .fas.fa-pull-left,
+            .far.fa-pull-left,
+            .fal.fa-pull-left,
+            .fab.fa-pull-left {
+                margin-right: 0.3em;
+            }
+            .fa.fa-pull-right,
+            .fas.fa-pull-right,
+            .far.fa-pull-right,
+            .fal.fa-pull-right,
+            .fab.fa-pull-right {
+                margin-left: 0.3em;
+            }
+    
+            .fa-spin {
+                -webkit-animation: fa-spin 2s infinite linear;
+                animation: fa-spin 2s infinite linear;
+            }
+    
+            .fa-pulse {
+                -webkit-animation: fa-spin 1s infinite steps(8);
+                animation: fa-spin 1s infinite steps(8);
+            }
+    
+            @-webkit-keyframes fa-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+    
+            @keyframes fa-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            .fa-rotate-90 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+    
+            .fa-rotate-180 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+    
+            .fa-rotate-270 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+    
+            .fa-flip-horizontal {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+                -webkit-transform: scale(-1, 1);
+                transform: scale(-1, 1);
+            }
+    
+            .fa-flip-vertical {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+                -webkit-transform: scale(1, -1);
+                transform: scale(1, -1);
+            }
+    
+            .fa-flip-both,
+            .fa-flip-horizontal.fa-flip-vertical {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+                -webkit-transform: scale(-1, -1);
+                transform: scale(-1, -1);
+            }
+    
+            :root .fa-rotate-90,
+            :root .fa-rotate-180,
+            :root .fa-rotate-270,
+            :root .fa-flip-horizontal,
+            :root .fa-flip-vertical,
+            :root .fa-flip-both {
+                -webkit-filter: none;
+                filter: none;
+            }
+    
+            .fa-stack {
+                display: inline-block;
+                height: 2em;
+                position: relative;
+                width: 2.5em;
+            }
+    
+            .fa-stack-1x,
+            .fa-stack-2x {
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+    
+            .svg-inline--fa.fa-stack-1x {
+                height: 1em;
+                width: 1.25em;
+            }
+            .svg-inline--fa.fa-stack-2x {
+                height: 2em;
+                width: 2.5em;
+            }
+    
+            .fa-inverse {
+                color: #fff;
+            }
+    
+            .sr-only {
+                border: 0;
+                clip: rect(0, 0, 0, 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+    
+            .sr-only-focusable:active,
+            .sr-only-focusable:focus {
+                clip: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                position: static;
+                width: auto;
+            }
+    
+            .svg-inline--fa .fa-primary {
+                fill: var(--fa-primary-color, currentColor);
+                opacity: 1;
+                opacity: var(--fa-primary-opacity, 1);
+            }
+    
+            .svg-inline--fa .fa-secondary {
+                fill: var(--fa-secondary-color, currentColor);
+                opacity: 0.4;
+                opacity: var(--fa-secondary-opacity, 0.4);
+            }
+    
+            .svg-inline--fa.fa-swap-opacity .fa-primary {
+                opacity: 0.4;
+                opacity: var(--fa-secondary-opacity, 0.4);
+            }
+    
+            .svg-inline--fa.fa-swap-opacity .fa-secondary {
+                opacity: 1;
+                opacity: var(--fa-primary-opacity, 1);
+            }
+    
+            .svg-inline--fa mask .fa-primary,
+            .svg-inline--fa mask .fa-secondary {
+                fill: black;
+            }
+    
+            .fad.fa-inverse {
+                color: #fff;
+            }
+        </style>
+        <link rel="icon" href="images/lego-logo-180.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
 
-<nav class="navbar">
-<a class="logo"> <img src="img/Logo.gif" alt="firstimg" width="150" height="50"> </a> <a class="title">LEGO</a>
-</nav>
-
-<head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-    </style>
-  <img src="img/Lego1.png" alt="" width="100%" >
-</head>
-
-<body>
-  <h2> Trending Now </h2>
-  <div class="wrapper">
-    <div class="one"> <img src="img/Lego2.png" alt="" width="90%"></div>
-    <div class="two"><img src="img/Lego3.png" alt="" width="90%"></div>
-    <div class="three"><img src="img/Lego3.png" alt="" width="90%"></div>
-  </div>
-
-  <h2>Featured Sets</h2>
-  <div class="container">
-    <!-- Media object -->
-    <div class="container__media">
-      <img src="img/Lego4.png" alt="" width="50%"> <br>
-      <img src="img/Lego5.png" alt="" width="50%"> <br> 
-      <img src="img/Lego6.png" alt="" width="50%"> <br> 
-    </div>
-
-    <!-- Main content -->
-    <div class="container__content">
-      <h3>Specifications</h3>
-      <p>Players will love the flipping, shaking and balancing challenges in this Bowser’s Castle Boss Battle Expansion Set (71369). A brilliant gift for kids to add to the LEGO® Super Mario™ Starter Course (71360), this castle toy playset features towers with rotating and shaking platforms, flippers to raise Bowser's arms and access the ? Block and Time Block, a shaking bridge, plus Bowser, Boo, Dry Bones and Lava Bubble figures.
-      </p>
-      <h2>Fun-Packed App</h2>
-      <h3>Unlimited Gameplay</h3>
-      <br> <br> <br><br>
-      <h3>Specifications</h3>
-      <p>Fans can enhance their LEGO® Super Mario™ gameplay and enjoy lots of creative role-play fun with this Mario’s House & Yoshi Expansion Set (71367). This collectible toy playset features a buildable house with an opening door and roof with a Super Star Block underneath. A great gift for kids who have the Adventures with Mario Starter Course (71360), it also has a hammock to rock LEGO® Mario™ (figure not included) to sleep, plus Yoshi and Goomba toy figures to interact with and win coins.
-      </p>
-      <h3>Awesome App</h3>
-      <h3>Top Gift Ideas</h3>
-      <br> <br> <br><br>
-      <h3>Specifications</h3>
-       <p>LEGO® Super Mario™ fans will love the frightful challenges in this King Boo and the Haunted Yard Expansion Set (71377). A fun gift for kids to add to the LEGO Super Mario Starter Course (71360), this collectible toy features King Boo, 2 Goombas and 4 Swoop figures for action-packed gameplay. To get to the hidden Super Star, players must stomp on Goombas and a spider web, flip a tree and then stomp the spinning Swoops to topple King Boo.</p>
-      <h3>Exciting App</h3>
-      <h3>Limitiless Gameplay</h3>
-
-    </div>
-    </div>
-
-
-  <h2>Spotlight on</h2>
-  <div class="wrapper">
-    <div class="one"> <img src="img/Lego2.png" alt="" width="90%"></div>
-    <div class="two"><img src="img/Lego3.png" alt="" width="90%"></div>
-  </div>
-
-  <h2>Recommended For You</h2>
-  <div class="wrapper">
-    <div class="one"> <img src="img/Lego2.png" alt="" width="90%"></div>
-    <div class="two"><img src="img/Lego3.png" alt="" width="90%"></div>
-    <div class="three"><img src="img/Lego3.png" alt="" width="90%"></div>
-  </div>
-
-
-
-</body>
-
-<footer>
-  <div class="footer">
-    <p>Footer</p>
-  </div>
-</footer>
-
+        <link rel="apple-touch-icon" href="images/lego-logo-180.png" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/cocacola_bot.css" />
+        <title>Home | Official LEGO® Shop US</title>
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div id="root">
+            <div class="navRoute">
+                <div class="container-style container">
+                    <div class="row row-cols-lg-1">
+                        <div class="col">
+                            <nav class="nav-style navbar navbar-expand-lg navbar-light fixed-top">
+                                <a href="/lego/#/" class="nav-brand navbar-brand"><img alt="" src="images/LEGO-Logo-Ani2b.gif" class="nav-icon" /></a>
+                                <div class="nav-link-group navbar-nav"><span class="nav-link">LEGO</span></div>
+                                <form class="nav-form form-inline"></form>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="card-area intro-card row row-cols-lg-1">
+                        <div class="card-col col">
+                            <div class="bg-dark text-white card-style medium-card card">
+                                <img class="card-img card-image medium-card-image" src="images/71360-Homepage-202008-Hero-Standard-Large.webp" alt="Card image" />
+                                <div class="intro-overlay card-img-overlay">
+                                    <div class="intro-title text-black card-title h5">Start the adventure</div>
+                                    <div class="intro-title text-black intro-title-more card-title h5"></div>
+                                    <p class="intro-text text-black card-text">Take LEGO® fun to a whole new level with the new Adventures with Mario Starter Course.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-label row row-cols-lg-1">
+                        <div class="col">
+                            <div><span class="latest-title">Trending now</span></div>
+                        </div>
+                    </div>
+                    <div class="card-area row row-cols-lg-3">
+                        <div class="simple-card-left col">
+                            <div class="bg-dark text-white card-style simple-medium-card card">
+                                <img class="card-img card-image simple-medium-card-image" src="images/31199-Zebra-Marvel-Homepage--072320--Block-Standard-Lifestyle.webp" alt="Card image" />
+                                <div class="simple-overlay card-img-overlay">
+                                    <div class="simple-content"><p class="simple-text text-black card-text"></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simple-card-mid col">
+                            <div class="bg-dark text-white card-style simple-medium-card card">
+                                <img class="card-img card-image simple-medium-card-image" src="images/40428-HP-2020-Block-Standard.webp" alt="Card image" />
+                                <div class="simple-overlay card-img-overlay">
+                                    <div class="simple-content"><p class="simple-text text-black card-text"></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simple-card-right col">
+                            <div class="bg-dark text-white card-style simple-medium-card card">
+                                <img class="card-img card-image simple-medium-card-image" src="images/43179-Disney-Characters-202006-Homepage-Still-Life-2-Block-Standard.webp" alt="Card image" />
+                                <div class="simple-overlay card-img-overlay">
+                                    <div class="simple-content"><p class="simple-text text-light card-text"></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-label row row-cols-lg-3">
+                        <div class="label-area col">
+                            <div><span class="latest-text">New exclusive Marvel Studios Iron Man</span></div>
+                        </div>
+                        <div class="label-area col">
+                            <div><span class="latest-text">Capture a villain</span></div>
+                        </div>
+                        <div class="label-area col">
+                            <div><span class="latest-text">Reconnect with old friends</span></div>
+                        </div>
+                    </div>
+                    <div class="latest-label row row-cols-lg-1">
+                        <div class="col">
+                            <div><span class="latest-title">Featured sets</span></div>
+                        </div>
+                    </div>
+                    <div class="product-intro product-intro-start row">
+                        <div class="product-intro-image col-md-5">
+                            <div class="product-card card">
+                                <img class="card-img-top product-card-image" src="images/71369.webp" />
+                                <div class="product-card-body card-body">
+                                    <div class="product-card-title card-title h5">Bowser's Castle Boss Battle Expansion Set</div>
+                                    <div class="product-card-price card-title h5">$99.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-intro-text col-md-7">
+                            <div class="intro-text-one form-group">
+                                <div class="form-row">
+                                    <table class="product-table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Ages</th>
+                                                <th>Pieces</th>
+                                                <th>VIP Points</th>
+                                                <th>Item</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8+</td>
+                                                <td>1010</td>
+                                                <td>650</td>
+                                                <td>71369</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Specifications</b></label>
+                                </div>
+                                <div class="form-row">
+                                    <label class="form-label">
+                                        Players will love the flipping, shaking and balancing challenges in this Bowser’s Castle Boss Battle Expansion Set (71369). A brilliant gift for kids to add to the LEGO® Super Mario™ Starter Course (71360),
+                                        this castle toy playset features towers with rotating and shaking platforms, flippers to raise Bowser's arms and access the ? Block and Time Block, a shaking bridge, plus Bowser, Boo, Dry Bones and Lava
+                                        Bubble figures.
+                                    </label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Fun-packed app</b></label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Unlimited gameplay</b></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-intro row">
+                        <div class="product-intro-image col-md-5">
+                            <div class="product-card card">
+                                <img class="card-img-top product-card-image" src="images/71367.webp" />
+                                <div class="product-card-body card-body">
+                                    <div class="product-card-title card-title h5">Mario’s House &amp; Yoshi Expansion Set</div>
+                                    <div class="product-card-price card-title h5">$29.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-intro-text col-md-7">
+                            <div class="intro-text-two form-group">
+                                <div class="form-row">
+                                    <table class="product-table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Ages</th>
+                                                <th>Pieces</th>
+                                                <th>VIP Points</th>
+                                                <th>Item</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>6+</td>
+                                                <td>205</td>
+                                                <td>195</td>
+                                                <td>71367</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Specifications</b></label>
+                                </div>
+                                <div class="form-row">
+                                    <label class="form-label">
+                                        Fans can enhance their LEGO® Super Mario™ gameplay and enjoy lots of creative role-play fun with this Mario’s House &amp; Yoshi Expansion Set (71367). This collectible toy playset features a buildable house
+                                        with an opening door and roof with a Super Star Block underneath. A great gift for kids who have the Adventures with Mario Starter Course (71360), it also has a hammock to rock LEGO® Mario™ (figure not
+                                        included) to sleep, plus Yoshi and Goomba toy figures to interact with and win coins.
+                                    </label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Awesome app</b></label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Top gift ideas</b></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-intro row">
+                        <div class="product-intro-image col-md-5">
+                            <div class="product-card card">
+                                <img class="card-img-top product-card-image" src="images/71377.webp" />
+                                <div class="product-card-body card-body">
+                                    <div class="product-card-title card-title h5">King Boo and the Haunted Yard Expansion Set</div>
+                                    <div class="product-card-price card-title h5">$49.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-intro-text col-md-7">
+                            <div class="intro-text-three form-group">
+                                <div class="form-row">
+                                    <table class="product-table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Ages</th>
+                                                <th>Pieces</th>
+                                                <th>VIP Points</th>
+                                                <th>Item</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8+</td>
+                                                <td>431</td>
+                                                <td>325</td>
+                                                <td>71377</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Specifications</b></label>
+                                </div>
+                                <div class="form-row">
+                                    <label class="form-label">
+                                        LEGO® Super Mario™ fans will love the frightful challenges in this King Boo and the Haunted Yard Expansion Set (71377). A fun gift for kids to add to the LEGO Super Mario Starter Course (71360), this
+                                        collectible toy features King Boo, 2 Goombas and 4 Swoop figures for action-packed gameplay. To get to the hidden Super Star, players must stomp on Goombas and a spider web, flip a tree and then stomp the
+                                        spinning Swoops to topple King Boo.
+                                    </label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Exciting app</b></label>
+                                </div>
+                                <br />
+                                <div class="form-row">
+                                    <label class="form-label"><b>Limitless gameplay</b></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-label row row-cols-lg-1">
+                        <div class="col">
+                            <div><span class="latest-title">Spotlight on</span></div>
+                        </div>
+                    </div>
+                    <div class="card-area row row-cols-lg-2">
+                        <div class="simple-card-left col">
+                            <div class="bg-dark text-white card-style simple-medium-card card">
+                                <img class="card-img card-image simple-medium-card-image" src="images/76153-HP-202006-Block-Standard.webp" alt="Card image" />
+                                <div class="simple-overlay card-img-overlay">
+                                    <div class="simple-content"><p class="simple-text text-light card-text">Soar to victory</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simple-card-right col">
+                            <div class="bg-dark text-white card-style simple-medium-card card">
+                                <img class="card-img card-image simple-medium-card-image" src="images/75941-Home-202006-Block-Standard.webp" alt="Card image" />
+                                <div class="simple-overlay card-img-overlay">
+                                    <div class="simple-content"><p class="simple-text text-light card-text">Stage ferocious fun</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-label row row-cols-lg-1">
+                        <div class="col">
+                            <div><span class="latest-title">Recommended For You</span></div>
+                        </div>
+                    </div>
+                    <div class="card-area row row-cols-lg-3">
+                        <div class="product-card-left col">
+                            <div class="product-card card"><img class="card-img-top best-card-image" src="images/31199.webp" /></div>
+                        </div>
+                        <div class="product-card-mid col">
+                            <div class="product-card card"><img class="card-img-top best-card-image" src="images/21322.webp" /></div>
+                        </div>
+                        <div class="product-card-right col">
+                            <div class="product-card card"><img class="card-img-top best-card-image" src="images/71361.webp" /></div>
+                        </div>
+                    </div>
+                    <div class="footer-last row row-cols-lg-2">
+                        <div class="footer-last-left col">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fas"
+                                data-icon="map-marker-alt"
+                                class="svg-inline--fa fa-map-marker-alt fa-w-12 footer-last-white"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                                ></path>
+                            </svg>
+                            <span class="footer-last-white">&nbsp; United States &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="footer-last-grey">© 2020 The LEGO Group. All Rights Reserved</span>
+                        </div>
+                        <div class="footer-last-right col">
+                            <span class="footer-last-grey">Guides</span><span class="footer-last-grey">Terms of Sale</span><span class="footer-last-grey">Terms of Use</span><span class="footer-last-grey">Privacy Policy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
 </html>
